@@ -43,10 +43,10 @@ import javax.swing.table.TableColumnModel;
 
 public class AppPipCrud extends JFrame {
 
-    // Konfigurasi Koneksi Database MySQL Laragon
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/nopl?useSSL=false&serverTimezone=Asia/Jakarta";
-    private static final String DB_USER = "root";
-    private static final String DB_PASS = "";
+    // Konfigurasi Koneksi Remote MySQL Online (Aiven)
+    private static final String DB_URL = "jdbc:mysql://mysql-e37d74f-naufalrizqyalfath-4b7e.a.aivencloud.com:28803/defaultdb?useSSL=true&requireSSL=true&serverTimezone=Asia/Jakarta";
+    private static final String DB_USER = "avnadmin";
+    private static final String DB_PASS = "AVNS_HUN5zAyVMLCYDVeigqT";
 
     private static final NumberFormat NF = NumberFormat.getInstance(Locale.forLanguageTag("id-ID"));
 
